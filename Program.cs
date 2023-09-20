@@ -26,7 +26,7 @@ const int userCount = 217;
 var userData = usersDataGenerator.GenerateLazy(userCount).ToList();
 _ = UpdateUsersAsync(userData);
 
-users.MapGet("/lastSeen", (int offset) => new { Total = userCount, Data = userData.Skip(offset).Take(20) });
+users.MapGet("/lastSeen", (int offset) => new Result<LastSeenUser>(userCount, userData.Skip(offset).Take(20)));
 
 app.UseSwagger();
 app.UseSwaggerUI();
@@ -63,6 +63,8 @@ void UpdateUsers(List<LastSeenUser> data)
     }
   }
 }
+
+record Result<T>(int Total, IEnumerable<T> Data);
 
 record LastSeenUser(
   string UserId, string Nickname, string FirstName, string LastName, 
