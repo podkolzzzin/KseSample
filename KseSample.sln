@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KseSample", "KseSample.csproj", "{97A952DC-5852-4E96-9405-266734A91847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A952DC-5852-4E96-9405-266734A91847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A952DC-5852-4E96-9405-266734A91847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A952DC-5852-4E96-9405-266734A91847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A952DC-5852-4E96-9405-266734A91847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
